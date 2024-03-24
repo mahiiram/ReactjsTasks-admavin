@@ -1,0 +1,31 @@
+.hitBoxRow {
+    display: flex;
+    justify-content: center;
+  }
+  .hitBoxCol {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .hitBox {
+    border: 1px solid gray;
+    height: 100px;
+    font-size: large;
+  }
+  .timerRow {
+    display: flex;
+    justify-content: center;
+  }
+  .resultCol {
+    font-size: 4rem;
+  }
+  
+  .timerCol {
+    font-size: 2rem;
+  }
+  .hitItContainer {
+    margin: 3% auto;
+    width: 600px;
+    border-radius: 0.5rem;
+    box-shadow: inset 0px 2px 10px 0px rgba(8, 8, 8, 0.3);
+  }

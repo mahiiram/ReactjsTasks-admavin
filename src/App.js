@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import BucketTransfer from "./components/BucketTransfer/BucketTransfer";
+import InfinteScroll from "./components/InfiniteScroll/InfiniteScroll";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Dashboard from "./components/Home/Dashboard";
+import SplitBox from "./components/SplitBox/SplitBox";
+import HitIt from "./components/HitIt/HitIt";
+import NestedComponents from "./components/NestedComponents/NestedComponents";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+      <Routes>
+                <Route path="/" element={<Dashboard />} />
+                <Route path="/elementTransfer" element={<BucketTransfer />} />
+                <Route path="/infiniteScroll" element={<InfinteScroll />} />
+                <Route path="/splitBox" element={<SplitBox />} />
+                <Route path="/hitIt" element={<HitIt />} />
+                <Route
+                  path="/nestedComponents"
+                  element={<NestedComponents />}
+                />
+              </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

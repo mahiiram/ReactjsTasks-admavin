@@ -1,0 +1,42 @@
+.nestedcompoContainer {
+    margin: 10% auto;
+  }
+  .nestedcompoRow {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .nestedcompoCol {
+    height: 400px;
+    width: 300px;
+    border-radius: 0.5rem;
+    box-shadow: inset 0px 2px 20px 0px rgba(87, 168, 204, 0.5);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .items {
+    margin: 5%;
+    border-radius: 0.5rem;
+    width: 100%;
+    text-align: center;
+    padding: 3%;
+    background-color: rgb(87, 168, 204, 0.5);
+  }
+  .ncIcon {
+    margin-left: 4px;
+    transition: 0.4s;
+  }
+  .ncIcon:hover {
+    transform: translateX(100%);
+  }
+  .items:hover {
+    background-color: #c9e1ec;
+  }
+  .active-pane {
+    background-color: #57a8cc;
+  }
+  .active-pane:hover {
+    background-color: #57a8cc;
+  }
