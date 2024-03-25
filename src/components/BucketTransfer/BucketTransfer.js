@@ -133,7 +133,6 @@ function Col1({ leftBucket, addItems, setAddItems }) {
        <ul className="list-group">
         {leftBucket.length === 0 ? (
           <p className="emptyText">
-            <TbMoodSad className="buttonIcon" />
             Oops..! Empty
           </p>
         ) : (
@@ -164,8 +163,7 @@ function Col2({ rightBucket, removeItems, setRemoveItems }) {
       <ul className="list-group">
         {rightBucket.length === 0 ? (
           <p className="emptyText">
-            <TbMoodSad className="buttonIcon" />
-            Oops..! Empty
+            Oops..! Empty 
           </p>
         ) : (
           rightBucket.map((item, index) => {
