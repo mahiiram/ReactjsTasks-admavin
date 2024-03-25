@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 .title {
+  font-size: 60px;
+  font-family: 'Times New Roman', Times, serif;
   text-align: center;
   margin-top: 1%;
+}
+a{
+  text-decoration: none;
+}
+.next{
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+  text-align: end;
+  margin-right: 100px;
+}
+.next:hover{
+  color: #206fb0;
+  transform: translateY(-2px);
 }

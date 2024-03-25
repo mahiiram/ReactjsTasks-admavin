@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./infiniteScroll.css";
+import { Link } from "react-router-dom";
 
 const InfiniteScroll = () => {
   const [count, setCount] = useState(1);
@@ -60,6 +61,7 @@ const InfiniteScroll = () => {
                   className="card-img-top"
                 />
               </div>
+              
             );
           })}
           {images.loading && (
@@ -71,6 +73,7 @@ const InfiniteScroll = () => {
           )}
         </div>
       </div>
+      
     </>
   );
 };

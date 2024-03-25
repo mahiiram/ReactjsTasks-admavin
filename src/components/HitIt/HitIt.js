@@ -10,20 +10,30 @@ function HitIt() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTime((prevTime) => prevTime - 1);
+      setTime((prevTime) => {
+        if(prevTime===0){
+          return 60
+        }else{
+           return prevTime - 1
+        }
+      });
     }, 1000);
+    const reloadPage=setTimeout(()=>{
+      window.location.reload()
+    },61000)
 
-    setTimeout(() => {
+    return(() => {
       clearInterval(interval);
+      clearTimeout(reloadPage)
       setDisable(true);
       setX(0);
-    }, 60000);
-  }, []);
+    });
+  },[]);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setDisable(false);
-      setX(Math.floor(Math.random() * 9 + 1));
+      setX(Math.floor(Math.random() * 9 + 1.5));
     }, 1000);
     setTimeout(() => {
       clearInterval(intervalId);
