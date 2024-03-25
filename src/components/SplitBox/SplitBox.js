@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./splitbox.css";
+import Navbar from "../Navbar/Navbar";
 
 function SplitBox() {
   const [boxes, setBoxes] = useState([{ x: 0, y: 0, size: 500 }]);
@@ -21,8 +22,8 @@ function SplitBox() {
 
   return (
     <>
-      <h3 className="title"> Split Box</h3>
-
+      <div>
+        <Navbar/>
       <div className="splitBox">
         <div>
           <button
@@ -51,6 +52,7 @@ function SplitBox() {
             onClick={() => splitBox(index)}
           />
         ))}
+      </div>
       </div>
     </>
   );

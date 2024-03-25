@@ -12,8 +12,7 @@ function App() {
     <>
       <BrowserRouter>
       <Routes>
-                <Route path="/" element={<Dashboard />} />
-                <Route path="/elementTransfer" element={<BucketTransfer />} />
+                <Route path="/" element={<BucketTransfer />} />
                 <Route path="/infiniteScroll" element={<InfinteScroll />} />
                 <Route path="/splitBox" element={<SplitBox />} />
                 <Route path="/hitIt" element={<HitIt />} />

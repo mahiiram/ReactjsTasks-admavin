@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { childA, parent, childB } from "./data";
 import "./nestedcomponents.css";
+import Navbar from "../Navbar/Navbar";
 
 function NestedComponents() {
   const [category, setCategory] = useState({ name: "phones" });
@@ -22,7 +23,9 @@ function NestedComponents() {
   };
   return (
     <>
-      <div className="container nestedcompoContainer">
+      <div>
+        <Navbar/>
+        <div className="container nestedcompoContainer">
         <div className="row nestedcompoRow">
           <div className="col-3 nestedcompoCol">
             {parent.map((item, index) => {
@@ -43,6 +46,7 @@ function NestedComponents() {
 
           <ChildComponentA items={items} />
         </div>
+      </div>
       </div>
     </>
   );
@@ -71,6 +75,7 @@ function ChildComponentA({ items }) {
   };
   return (
     <>
+
       <div className={`col-3 nestedcompoCol`}>
         {items.map((item, index) => {
           return (

@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import "./infiniteScroll.css";
 import { Link } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 
 const InfiniteScroll = () => {
   const [count, setCount] = useState(1);
@@ -49,6 +50,8 @@ const InfiniteScroll = () => {
 
   return (
     <>
+      <div>
+        <Navbar />
       <h3 className="title"> Infinite Scroll</h3>
       <div className="image_container" onScroll={handleScroll}>
         <div>
@@ -72,6 +75,7 @@ const InfiniteScroll = () => {
             </div>
           )}
         </div>
+      </div>
       </div>
       
     </>

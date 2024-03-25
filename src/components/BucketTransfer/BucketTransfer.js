@@ -2,6 +2,7 @@ import { useState } from "react";
 import { TbMoodSad } from "react-icons/tb";
 import "./bucketTransfer.css";
 import { Link } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 
 function BucketTransfer() {
   const [leftBucket, setLeftBucket] = useState([
@@ -60,7 +61,9 @@ function BucketTransfer() {
   };
 
   return (
-    <>
+    <> 
+    <div>
+    <Navbar/>
       <div>
         <h3 className="title">Element Transfer</h3>
       </div>
@@ -115,6 +118,7 @@ function BucketTransfer() {
           </div>
         </div>
       </div>
+    </div>
     </>
   );
 }
