@@ -14,18 +14,18 @@
     align-items: center;
   }
   .resetButton{
-    height: 50px;
-    width: 120px;
+    margin-top: 5px;
+    height: 40px;
+    width: 80px;
     background-color: #4a0440;
     color: white;
-    padding: 5px 10px;
+    padding: 2px 5px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
-    margin-top: 30px;
   }
   .resetButton:hover {
     background-color: #b0209b;
