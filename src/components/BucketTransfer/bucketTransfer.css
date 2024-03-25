@@ -3,9 +3,9 @@
     width: 100%;
     padding: 100px 100px;
     border-radius: 0.5rem;
-    margin: 5% auto;
     box-shadow: 0px 0px 28px 3px;
     max-width: 90%;
+    margin: auto;
   }
   .bucket_row{
        display: flex;

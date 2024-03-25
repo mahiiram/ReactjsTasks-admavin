@@ -2,7 +2,6 @@ import "./App.css";
 import BucketTransfer from "./components/BucketTransfer/BucketTransfer";
 import InfinteScroll from "./components/InfiniteScroll/InfiniteScroll";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Dashboard from "./components/Home/Dashboard";
 import SplitBox from "./components/SplitBox/SplitBox";
 import HitIt from "./components/HitIt/HitIt";
 import NestedComponents from "./components/NestedComponents/NestedComponents";
